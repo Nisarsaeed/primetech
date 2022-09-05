@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <style>
+    .pic {
+      height: 50vh;
+      width: 100%;
+    }
+
+    .about {
+      display: flex;
+      align-items: center;
+      height: 100vh;
+      background-color: black;
+      color: white;
+
+    }
+
+    .about-item2 {
+      display: flex;
+    }
+
+    .colla {
+      margin-left: 10px;
+    }
+
+    .about-img img {
+      height: auto;
+      max-width: 100%;
+
+    }
+
+    .span1 {
+      font-family: "Montserrat", Sans-serif;
+      font-size: 4vw;
+      color: rgb(255 231 0);
+
+
+    }
+
+    .card-pic {
+      height: 30vh;
+    }
+   
+  </style>
+
+</head>
+
+<body>
+  <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-light  bg-warning sticky-top">
+    <div class="container-fluid" id="scrollspyhome">
+      <a class="navbar-brand fw-bolder" href="#">Prime Tech</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ms-2 " aria-current="page" href="#scrollspyhome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-2" href="#scrollspyabout">About US</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ms-2" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              More Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyd1">Languages</a></li>
+              <li><a class="dropdown-item" href="#scrollspyd2">Clients</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">FAQ'S</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ms-2" href="/contact.html" target="_parent">Contact US</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search this Web" aria-label="Search">
+          <!-- <button class="btn btn-outline-success me-2" type="submit">Search</button> -->
+        </form>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-danger me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Login
+        </button>
+         <!-- Button trigger modal -->
+         <button type="button" class="btn btn-secondary me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">
+          Sign Up
+        </button>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example bg-light  rounded-2" tabindex="0">
+
+    <!-- home data -->
+    <div class="container-fluid bg-dark  text-warning text-opacity-75 text-center">
+      <h1 id="scrollspyhome" class="pt-4 text-wrap">Welcome to Prime Tech</h1>
+      <span class=" text-wrap fw-bolder p-2 span1 ">{ We Build , Your Online Presence } </span>
+
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="im.png" class="d-block w-100 " height="360" width="640" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="im1.png" class="d-block w-100 " height="360" width="640" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="im2.png" class="d-block w-100 " height="360" width="640" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- About data -->
+    <div class="container-fluid bg-dark text-white  p-5">
+      <div class="row">
+        <div class="col-lg-6  col-md-4 col-sm-2" id="scrollspyabout">
+          <img src="ji.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-6 col-md-8 col-sm-10">
+          <h2>About Prime Tech</h2>
+          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore earum veniam laboriosam adipisci,
+            explicabo voluptate harum, vel, cupiditate voluptatum atque non itaque quidem illo. Ipsam quasi beatae
+            alias, quibusdam culpa consectetur dignissimos doloremque dolor est voluptatem officiis repellat ab
+            provident maiores inventore quam. Dolorum harum sint at nostrum molestiae quis necessitatibus dolore, itaque
+            facilis. Et sit natus doloribus voluptatem. Ea?
+
+          </p>
+          <div class="d-flex">
+
+            <div class="me-5">
+              <p>
+                <button class="btn btn-danger " type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample1" aria-expanded="false" aria-controls="collapseWidthExample1">
+                  History
+                </button>
+              </p>
+              <div style="min-height: 120px; ">
+                <div class="collapse collapse-horizontal " id="collapseWidthExample1">
+                  <div class="card card-body text-primary text-opacity-75" style="width: 250px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nihil quia culpa voluptate ab
+                    repudiandae expedita, quasi doloribus non aspernatur maiores excepturi rem. Veritatis accusamus est
+                    unde! Assumenda cumque, repudiandae est nobis fugit autem. Excepturi, placeat! Eum id ipsam quaerat?
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <p>
+                <button class="btn btn-danger" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                  Mission
+                </button>
+              </p>
+              <div style="min-height: 120px; ">
+                <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                  <div class="card card-body text-primary text-opacity-75" style="width: 250px;">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nihil quia culpa voluptate ab
+                    repudiandae expedita, quasi doloribus non aspernatur maiores excepturi rem. Veritatis accusamus est
+                    unde! Assumenda cumque, repudiandae est nobis fugit autem. Excepturi, placeat! Eum id ipsam quaerat?
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dropdown first option -->
+    <div id="scrollspyd1">
+      <h2 class="p-4 mt-2 text-secondary text-center">Languages we use</h2>
+      <div class="card-group">
+        <div class="card text-bg-danger m-2">
+          <img src="l1.png" class=" card-pic img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">HTML</h5>
+            <p class="card-text">.Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto exercitationem natus
+              corrupti ut. Laudantium quam ipsum unde placeat obcaecati incidunt porro consectetur beatae error,
+              excepturi distinctio recusandae nulla amet odio iure itaque qui autem ullam iusto quo totam sed aliquid.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card text-bg-primary m-2">
+          <img src="l2.png" class=" card-pic img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">CSS</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto exercitationem natus
+              corrupti ut. Laudantium quam ipsum unde placeat obcaecati incidunt porro consectetur beatae error,
+              excepturi distinctio recusandae nulla amet odio iure itaque qui autem ullam iusto quo totam sed aliquid.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card text-bg-warning m-2">
+          <img src="l3.png" class=" card-pic img-fluid" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">JAVA SCRIPT</h5>
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto exercitationem natus
+              corrupti ut. Laudantium quam ipsum unde placeat obcaecati incidunt porro consectetur beatae error,
+              excepturi distinctio recusandae nulla amet odio iure itaque qui autem ullam iusto quo totam sed aliquid.
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- dropdown second option -->
+    <div id="scrollspyd2">
+
+      <h1 class="text-center m-5">Our Clients</h1>
+      <div class="container p-3  border border-dark"> <img src="c1.jpg" alt="" class="img-fluid"> </div>
+      <div class="container p-3  border border-dark"> <img src="c2.jpg" alt="" class="img-flui"></div>
+      <div class="container p-3  border border-dark"><img src="c3.jpg" alt="" class="img-flui"></div>
+      <div class="container p-3  border border-dark mb-3"><img src="c4.jpg" alt="" class="img-flui"></div>
+    </div>
+
+  </div>
+
+  <!-- login Modal -->
+  <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog "  >
+      
+      <div class="modal-content"  style="background-color: #FFE53B;
+      background-image: linear-gradient(147deg, #FFE53B 0%, #f56908 74%)";> 
+      
+      
+        <div class="modal-header"  >
+          <h5 class="modal-title" id="staticBackdropLabel">Login to previous account </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body"  ></div>
+          <form>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example1">Email address</label>
+              <input type="email" id="form1Example1" class="form-control" />
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example2">Password</label>
+              <input type="password" id="form1Example2" class="form-control" />
+            </div>
+          
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                </div>
+              </div>
+          
+              <div class="col">
+                <!-- Simple link -->
+                <a href="#!">Forgot password?</a>
+              </div>
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block m-2">Login</button>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- sign up -->
+  <div class="modal fade" id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #4158D0;
+      background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+      ">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel1">Create new account </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <!-- name input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example11">Name</label>
+              <input type="text" id="form1Example11" class="form-control" />
+            </div>
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example22">Email address</label>
+              <input type="email" id="form1Example22" class="form-control" />
+            </div>
+          
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form1Example33">Create Password</label>
+              <input type="password" id="form1Example33" class="form-control" />
+            </div>
+          
+            <!-- 2 column grid layout for inline styling -->
+            <div class="row mb-4">
+              <div class="col d-flex justify-content-center">
+                <!-- Checkbox -->
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="form1Example3" checked />
+                  <label class="form-check-label" for="form1Example3"> Remember me </label>
+                </div>
+              </div>
+          
+              
+            </div>
+          
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary btn-block">Register now</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+</body>
+
+</html>
